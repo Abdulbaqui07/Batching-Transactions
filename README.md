@@ -14,7 +14,34 @@ While batch transactions can be carried out at when, it's particularly suited to
 
 ## Steps for Implementing
 
-you need to create an npm project by going to an empty folder, running ```npm init```, and following its instructions. You can use another package manager, like yarn, but we recommend you use npm 7 or later, as it makes installing Hardhat plugins simpler.
+You need to create an npm project by going to an empty folder, running ```npm init -y```, and following its instructions. You can use another package manager, like yarn, but I recommend you to use npm 7 or later, as it makes installing Hardhat plugins simpler.
+
+Once your project is ready, you should run
+
+```
+npm install --save-dev hardhat
+```
+
+To create the sample project, run npx hardhat in your project folder:
+```
+$ npx hardhat
+888    888                      888 888               888
+888    888                      888 888               888
+888    888                      888 888               888
+8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
+888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
+888    888 .d888888 888    888  888 888  888 .d888888 888
+888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
+888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
+
+👷 Welcome to Hardhat v2.9.9 👷‍
+
+? What do you want to do? …
+❯ Create a JavaScript project
+  Create a TypeScript project
+  Create an empty hardhat.config.js
+  Quit
+```
 
 ```shell
 npx hardhat help
