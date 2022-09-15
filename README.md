@@ -98,8 +98,7 @@ Batching Contract Deployed at:  0x1658Ef43c935ed2cFb9E2f10a4F0f4275D5D0325
 
 ## Interacting Smart Contract with script using ethers.js
 
-Place your <contract>.json into one folder for fetching abi of smart contract in script.
-<a href="https://github.com/Abdulbaqui07/Batching-Transactions/blob/master/contractABI/Batching.json">contractABI/Batching.json</a>
+Place your <a href="https://github.com/Abdulbaqui07/Batching-Transactions/blob/master/contractABI/Batching.json">contractABI/Batching.json</a> into one folder for fetching abi of smart contract in script.
 
 Create one file with .js:
 
