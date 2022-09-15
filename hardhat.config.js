@@ -2,13 +2,13 @@ require("@nomicfoundation/hardhat-toolbox");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
-const INFURA_API_KEY = "738d607b3d294eb58ad33862a792d0bc";
-const ROPSTEN_PRIVATE_KEY = "ea5b6d32c0b20ca55844a554be835abb43ec614b54caa5afaed1aa1db03dba75";
+const INFURA_API_KEY = "Place your infura key here";
+const ROPSTEN_PRIVATE_KEY = "Place your account private key here";
 
 module.exports = {
   solidity: "0.8.9",
   etherscan: {
-    apiKey: "3IWWJT6PRBD4F25CY6RCUIH17DI79AS63W",
+    apiKey: "etherscan api for verifying contract",
   },
   networks: {
     ropsten: {
