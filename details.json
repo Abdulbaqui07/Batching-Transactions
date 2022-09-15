@@ -1,0 +1,17 @@
+{
+    "data": {
+        "acc1": {
+            "address": "Place your sender address",
+            "privateKey": "Place you sender address private key"
+        },
+        "acc2": {
+            "address": "Place address 2"
+        },
+        "acc3": {
+            "address": "Place address 3"
+        },
+        "infura": {
+            "rpcProvider": "Infura testnet link"
+        }
+    }
+}
