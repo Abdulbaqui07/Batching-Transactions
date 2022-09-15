@@ -42,11 +42,60 @@ $ npx hardhat
   Create an empty hardhat.config.js
   Quit
 ```
+## Compiling Smart Contract
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+To compile it, simply run:
+
 ```
+npx hardhat compile
+```
+
+## Deploying Smart Contract
+
+To deploy the contract we will use a Hardhat script.
+
+Inside the <a href="https://github.com/Abdulbaqui07/Batching-Transactions/blob/master/scripts/deploy_2.js" />scripts/deploy_2</a> folder you will find a file with the following code:
+
+```
+const hre = require("hardhat");
+
+async function main() {
+  const [batching] = await hre.ethers.getSigners();
+  console.log("Batching Contract with the account: ", batching.address);
+
+  const Instance = await hre.ethers.getContractFactory("Batching");
+  const batchingContract = await Instance.deploy();
+  await batchingContract.deployed()
+
+  console.log("Batching Contract Deployed at: ", batchingContract.address);
+}
+
+main()
+  .then(() => process.exit(0))
+  .catch(error => {
+    console.error(error);
+    process.exit(1);
+  })
+```
+
+You can run it using npx hardhat run:
+
+```
+$ npx hardhat run scripts/deploy_2.ts
+```
+
+or
+
+If you want to deploy on testnet then you can run: (Like I've deployed on ropsten)
+
+```
+$ npx hardhat run scripts/deploy_2.js --network ropsten
+Downloading compiler 0.8.9
+Compiled 1 Solidity file successfully
+Batching Contract with the account:  0x47f526Ac3BbECcC6bA8c4544Dd81803F46ac83bB
+Batching Contract Deployed at:  0x1658Ef43c935ed2cFb9E2f10a4F0f4275D5D0325
+```
+
+## To interact with smartcontract
+node batchApp.js
+Transaction hash:  0x7430b85abe2f7d40414ea400caa642c07391e29e978676c64e17cc87ddfa8883
