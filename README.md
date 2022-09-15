@@ -6,17 +6,17 @@ Batch transactions is the processing of transactions in a group or batch. This d
 
 ## Advantages of Batch Transactions
 
-Faster and Lower Cost
+Faster, Multiple Transactions, Lower Gas Fees.
 
 ## Applications
 
-While batch transactions can be carried out at when, it's particularly suited to end-of-cycle processing, such as for processing a bank's reports at the end of a day or generating monthly or biweekly payrolls.
+Batch transactions can be carried out when, it's particularly suited to end-of-cycle processing, such as for processing a bank's reports at the end of a day or generating monthly or biweekly payrolls.
 
 ## Steps for Implementing
 
 You need to create an npm project by going to an empty folder, running ```npm init -y```, and following its instructions. You can use another package manager, like yarn, but I recommend you to use npm 7 or later, as it makes installing Hardhat plugins simpler.
 
-Once your project is ready, you should run
+Once your project is ready, you should run:
 
 ```
 npm install --save-dev hardhat
