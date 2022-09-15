@@ -25,6 +25,7 @@ npm install --save-dev hardhat
 To create the sample project, run npx hardhat in your project folder:
 ```
 $ npx hardhat
+```
 888    888                      888 888               888
 888    888                      888 888               888
 888    888                      888 888               888
