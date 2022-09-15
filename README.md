@@ -1,4 +1,4 @@
-# Batching Transactions using smart contract and ethers.js
+# Batching Transactions using Smart Contract and ethers.js
 
 ## What Is Batch Transactions?
 
